@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Montserrat;
+        }
+        .container {
+            width: 90%;
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .card__wrapper {
+            padding: 5rem 0;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+            justify-content: space-between;
+            gap: 2.5rem;
+        }
+        .cards .card {
+            position: relative;
+            min-height: 400px;
+            padding: 2rem;
+            border-radius: 10px;
+             box-shadow: 0 30px 25px -30px rgba(51, 51, 51, 0.6);
+             background: linear-gradient(to right bottom, #222, #000);
+             overflow: hidden;
+             z-index: 1;
+             color: #fff;
+        }
+         .card:nth-child(2){
+                 background: linear-gradient(to right bottom, #eb5a5a, #f83232);
+         }
+ 
+         .card:nth-child(3){
+                 background: linear-gradient(to right bottom, #9cecbb, #34926b);
+         }
+        .cards .card .elements {
+            
+         display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            text-align: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .cards .card img {
+            position: absolute;
+            width: 300px;
+            right: -30%;
+            top: -10%;
+            pointer-events: none;
+            z-index: -1;
+            transition: right .5s ease-in-out;
+        }
+        .cards .card:hover img {
+            right: 2%;
+        }
+        .cards .card .title h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        .cards .card h4 {
+            text-transform: uppercase;
+            opacity: .34;
+            font-size: 1.2rem;
+            letter-spacing: 8px;
+        }
+        .card .desc{
+            line-height: 1.2;
+        }
+        .card a {
+             padding: 15px 40px;
+             border-radius: 100px;
+             margin-top: 30px;
+             font-size: 11px;
+             font-weight: 600;
+             color: #222;
+             background-color: #fff;
+             text-decoration: none;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .title small {
+            opacity: .5;
+        }
+        .title span {
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="card__wrapper">
+        <div class="container">
+            <div class="title">
+                <small>Join one of the most actively contributing coding and designing institute of Madhya Pradesh</small>
+<p>We never wanted to be just one more <span>coaching</span> in this city & that's why we became more than that.</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="http://sheryians.com/Images/codeSign.png" alt="">
+                    <div class="elements">
+                        <div class="title">
+                            
+                        <h4>CODING</h4>
+                        <h1>6</h1>
+                        <h3>COURSES</h3>
+                        <h5>FEATURE CODING</h5>
+                        </div>
+                        <div class="desc">
+                            
+                        <p>Courses which are about coding the apps and creating the applications via coding, in these courses you will learn how to code apps/server/database etc.</p>
+                        </div>
+                        <a href="#0">Enquire About Courses</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="http://sheryians.com/Images/designSign.png" alt="">
+                    <div class="elements">
+                        <div class="title">
+                            <h4>DESIGNING</h4>
+                            <h1>3</h1>
+                            <h3>COURSES</h3>
+                            <h5>FEATURE DESIGNING</h5>
+                        </div>
+                        <div class="desc">
+                            
+                        <p>Courses which are about developing the web experiences or mobile apps and creating their, in these courses you will learn how to design apps/ser wordpress, CMS.</p>
+                        </div>
+                        <a href="#0">Enquire About Courses</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="http://sheryians.com/Images/designSign.png" alt="">
+                    <div class="elements">
+                        <div class="title">
+                            <h4>MARKETING</h4>
+                            <h1>2</h1>
+                        <h3>COURSES</h3>
+                        <h5>FEATURE MARKETING</h5>
+                        </div>
+                        <div class="desc">
+                            <p>Courses which are about marketing the contents, with social platforms like Linkedin, Fiver, Instagram & Facebook.</p>
+                        </div>
+                        <a href="#0">Enquire About Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
